@@ -1,0 +1,7 @@
+---
+# tasks file for win_ad_install
+- include_vars: my_ad_vars.yml
+- include_tasks: install_adds.yml
+- include_tasks: promote_dc.yml
+- include_tasks: reboot.yml
+- include_tasks: print_dc.yml

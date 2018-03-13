@@ -1,0 +1,10 @@
+#Install OpenSSH on Windows Server
+- name: Install OpenSSH package
+  win_chocolatey:
+    name: '{{ item }}'
+    state: present
+    params: "{{ parameters }}"
+  with_items:
+  - "{{ package_name }}"
+  
+  

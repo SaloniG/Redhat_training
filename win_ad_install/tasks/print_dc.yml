@@ -1,0 +1,4 @@
+# Print Domain Controllers 
+- name: Print Domain Controllers
+  win_shell: nltest /dclist:"{{ ad_domain_name }}"
+  

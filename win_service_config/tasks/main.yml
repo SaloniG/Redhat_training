@@ -1,0 +1,6 @@
+---
+# tasks file for win_service_config
+- include_vars: ssh_var.yml 
+- include_tasks: install_package.yml
+- include_tasks: win_service_manage.yml
+- include_tasks: win_firewall.yml

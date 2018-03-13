@@ -1,0 +1,10 @@
+#Set Firewall rule
+- name: Set Firewall Port for OpenSSH on port 22
+  win_firewall_rule:
+    name: "{{ package_name }}"
+    localport: "{{ local_port }}"
+    action: allow
+    direction: in
+    protocol: "{{ protocol_name }}"
+    state: present
+    enabled: yes

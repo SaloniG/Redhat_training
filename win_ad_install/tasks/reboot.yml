@@ -1,0 +1,9 @@
+#Reboot Windows Server
+- win_reboot:
+    shutdown_timeout: 3600
+    reboot_timeout: 3600
+  when: installed_result.reboot_required
+  
+
+  
+   

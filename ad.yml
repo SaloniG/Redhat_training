@@ -1,0 +1,4 @@
+- name: playbook for AD Domain service
+  hosts: windows
+  roles:
+    - win_ad_install
